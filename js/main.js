@@ -62,18 +62,24 @@ console.log(nomeListaUno);
 //Crea due array che hanno un numero di elementi diversi.
 var nomeListaUno = ["Alfredo", "Diego", "Matteo"];
 var nomeListaDue = ["Giusy", "Giulia", "Antonia", "Irene", "Lucrezia"];
+var nuoviNomiAggiuntoListaDue = prompt("La lista due è maggiore delle lista uno. Inserisci un nuovo nome nella lista due");
+console.log("Lista due contiene " + nomeListaDue.push(nuoviNomiAggiuntoListaDue) + " nuovi elementi");
+
+
 
 //Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
 
 var differenza = (nomeListaDue.length) - (" ") - (nomeListaUno.length);
+console.log("La differenza tra il primo array e il secondo è pari a " + differenza);
 var numeroInterazioni = parseInt(differenza);
 var nomiAggiunti;
 
 for (var i = 0; i < numeroInterazioni; i++) {
-    nomiAggiunti = prompt("inserisci nome");
+    nomiAggiunti = prompt("Inserirai tanti nomi fino a quando le due liste non contengono gli stessi elementi");
     nomeListaUno.push(nomiAggiunti);
 }
 console.log(nomeListaUno);
+console.log(nomeListaDue);
 
 
 
